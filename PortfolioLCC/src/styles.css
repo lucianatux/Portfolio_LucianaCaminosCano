@@ -47,13 +47,7 @@
   
   /*=========================SECCIONES================================*/
   
-  .contenedor {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 0;
-    align-items: center;
-  }
+  
   
   .subtitulo {
     background-color:lightgrey;
@@ -64,21 +58,21 @@
     margin-bottom: 40px;
     margin-top: 80px;
     font-size: 60px;
-    font-family: 'Marvel', sans-serif;
+    box-shadow: 5px 5px 15px black;
+
   }
- 
-  
-  /*=========================EDUCACION================================*/
-  
-  .col-sm img{
-    width: 10rem;
-  }
-  
-  /*=========================EXPERIENCIA================================*/
-  
-  /*=========================PROYECTOS================================*/
-  
-  /*=========================HABILIDADES================================*/
+
+  .row{
+    padding: 2em;
+}
+
+h3, h5{
+    display: inline;
+}
+
+.card{
+  box-shadow: 5px 5px 15px black;
+}
   
   
   /*=========================FOOTER================================*/
