@@ -1,0 +1,14 @@
+img {
+  width: 40px;
+  margin: 10px;
+}
+
+footer {
+  background: black;
+  min-height: 12em;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
