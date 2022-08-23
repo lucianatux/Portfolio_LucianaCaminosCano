@@ -1,8 +1,20 @@
-div{
-    background-color: black;
+#logoAP {
+  width: 150px;
+  padding: 5px;
 }
 
-app-social{
-    float: right;
-    margin-top: 25px;
+.elementos img {
+  width: 40px;
+  margin: 10px;
+}
+
+#barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+#botonLogin {
+    margin: 20px;
 }
