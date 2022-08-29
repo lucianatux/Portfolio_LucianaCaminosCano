@@ -24,12 +24,12 @@ public class ServExper {
         return irexperiencia.findById(id);
     }
     
-    public Optional<Experiencia> getTrabajo(String trabajo){
+    public Optional<Experiencia> getByTrabajo(String trabajo){
         return irexperiencia.findByTrabajo(trabajo);
     }
     
-    public void save(Experiencia expe){
-        irexperiencia.save(expe);
+    public void save(Experiencia exper){
+        irexperiencia.save(exper);
     }
     
     public void delete(int id){

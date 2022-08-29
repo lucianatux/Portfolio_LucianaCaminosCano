@@ -2,7 +2,7 @@
 package com.portfolioBackend.LCC.Security.Entity;
 
 import com.portfolioBackend.LCC.Security.Enums.RolNombre;
-import com.sun.istack.NotNull;
+import javax.validation.constraints.NotNull;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;

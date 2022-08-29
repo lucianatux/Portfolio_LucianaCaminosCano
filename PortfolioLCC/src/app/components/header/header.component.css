@@ -8,6 +8,10 @@
   margin: 10px;
 }
 
+.elementos{
+  padding: 10px;
+}
+
 #barra {
   display: flex;
   justify-content: space-between;

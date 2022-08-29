@@ -1,7 +1,7 @@
 
 package com.portfolioBackend.LCC.Security.Entity;
 
-import com.sun.istack.NotNull;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Column;

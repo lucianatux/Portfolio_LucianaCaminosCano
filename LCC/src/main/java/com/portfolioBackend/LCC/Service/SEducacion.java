@@ -40,7 +40,7 @@ public class SEducacion {
         return ireducacion.existsById(id);
     }
     
-    public boolean existsByNombreEd(String estudio){
+    public boolean existsByEstudio(String estudio){
         return ireducacion.existsByEstudio(estudio);
     }
     

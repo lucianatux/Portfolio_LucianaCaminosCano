@@ -7,6 +7,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css']
 })
+
 export class BannerComponent implements OnInit {
 persona: persona = new persona("", "", "", "", "", "", "", "", "", "","");
   constructor(public personaService: PersonaService) { }
