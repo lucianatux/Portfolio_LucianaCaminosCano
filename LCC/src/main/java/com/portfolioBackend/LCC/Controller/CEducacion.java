@@ -28,13 +28,13 @@ public class CEducacion {
     
     
     
-    @GetMapping("/listaeducacion")
+    @GetMapping("/lista")
     public  ResponseEntity<List<Educacion>> list(){
         List<Educacion> list= serveduc.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    @GetMapping("/educacionn/{id}")
+    @GetMapping("/detail/{id}")
     public ResponseEntity<Educacion> getById(@PathVariable("id")int id){
         if(!serveduc.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
@@ -45,7 +45,7 @@ public class CEducacion {
     
     
     
-    @PostMapping("/creareducacion")
+    @PostMapping("/create")
    public ResponseEntity<?> create(@RequestBody dtoEducacion dtoeduc){
         if (StringUtils.isBlank(dtoeduc.getEstudio())){
             return new ResponseEntity(new Mensaje("El nombre del estudio es obligatorio"), 
@@ -64,7 +64,7 @@ public class CEducacion {
    
    
    
-   @PutMapping("/actualizareducacion/{id}")
+   @PutMapping("/update/{id}")
    public ResponseEntity<?> update(@PathVariable("id") int id,
            @RequestBody dtoEducacion dtoeduc){
        if(!serveduc.existsById(id)){
@@ -93,7 +93,7 @@ public class CEducacion {
    
    
    
-   @DeleteMapping("/borrareducacion/{id}")
+   @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!serveduc.existsById(id)) {
             return new ResponseEntity(new Mensaje("no existe el id"), 

@@ -29,13 +29,13 @@ public class CExperiencia {
     
     
     
-    @GetMapping("/listaexperiencia")
+    @GetMapping("/lista")
     public  ResponseEntity<List<Experiencia>> list(){
         List<Experiencia> list= servexper.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
-    @GetMapping("/experiencia/{id}")
+    @GetMapping("/detail/{id}")
     public ResponseEntity<Experiencia> getById(@PathVariable("id") int id){
         if(!servexper.existsById(id))
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
@@ -44,7 +44,7 @@ public class CExperiencia {
     }
     
     
-    @PostMapping("/crearexperiencia")
+    @PostMapping("/create")
    public ResponseEntity<?> create(@RequestBody dtoExperiencia dtoexp){
         if (StringUtils.isBlank(dtoexp.getTrabajo())){
             return new ResponseEntity(new Mensaje("El nombre del trabajo es obligatorio"), 
@@ -63,7 +63,7 @@ public class CExperiencia {
    
    
    
-   @PutMapping("/actualizarexperiencia/{id}")
+   @PutMapping("/update/{id}")
    public ResponseEntity<?> update(@PathVariable("id") int id,
            @RequestBody dtoExperiencia dtoexp){
        if(!servexper.existsById(id)){
@@ -92,7 +92,7 @@ public class CExperiencia {
    
    
    
-   @DeleteMapping("/borrarexperiencia/{id}")
+   @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!servexper.existsById(id)) {
             return new ResponseEntity(new Mensaje("no existe"), 

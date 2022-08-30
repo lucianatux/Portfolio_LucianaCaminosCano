@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     private String estudio;
     private String periodo;
     private String descripcion;
@@ -28,11 +28,11 @@ public class Educacion {
     
     //Getters y Setters
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
