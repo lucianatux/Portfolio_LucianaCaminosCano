@@ -1,37 +1,24 @@
 
-package com.portfolioBackend.LCC.Entity;
+package com.portfolioBackend.LCC.Dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 
-@Entity
-public class Proyectos {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-     private int id;
-    //proy se refiere a nombre del proyecto
+public class Dtoproyectos {
+    @NotBlank
     private String proy;
+    @NotBlank
     private String descripcion;
+    @NotBlank
     private String enlace;
 
-    public Proyectos() {
+    public Dtoproyectos() {
     }
 
-    public Proyectos(String proy, String descripcion, String enlace) {
+    public Dtoproyectos(String proy, String descripcion, String enlace) {
         this.proy = proy;
         this.descripcion = descripcion;
         this.enlace = enlace;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getProy() {
@@ -57,6 +44,4 @@ public class Proyectos {
     public void setEnlace(String enlace) {
         this.enlace = enlace;
     }
-    
-    
 }
