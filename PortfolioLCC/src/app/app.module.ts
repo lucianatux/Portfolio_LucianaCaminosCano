@@ -19,6 +19,12 @@ import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor';
 import { NuevaExperienciaComponent } from './components/experiencia/nueva-experiencia/nueva-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NuevaEducacionComponent } from './components/educacion/nueva-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { NuevoProyectoComponent } from './components/proyectos/nuevo-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { NuevaSkillComponent } from './components/skills/nueva-skill.component';
+import { EditSkillComponent } from './components/skills/edit-skill.component';
 
 
 @NgModule({
@@ -35,7 +41,13 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     HomeComponent,
     LoginComponent,
     NuevaExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NuevaEducacionComponent,
+    EditEducacionComponent,
+    NuevoProyectoComponent,
+    EditProyectoComponent,
+    NuevaSkillComponent,
+    EditSkillComponent
   ],
   imports: [
     BrowserModule,
