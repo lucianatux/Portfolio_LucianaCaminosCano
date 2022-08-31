@@ -48,6 +48,7 @@ import { EditSkillComponent } from './components/skills/edit-skill.component';
     EditProyectoComponent,
     NuevaSkillComponent,
     EditSkillComponent
+    
   ],
   imports: [
     BrowserModule,

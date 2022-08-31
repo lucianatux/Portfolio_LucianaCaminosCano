@@ -50,7 +50,7 @@ public class PersonaController {
     return ipersonaService.findPersona((long)1); 
     }
        
-       //URL:puerto/personas/editar/4/nombre="ejemplo"&apellido="ejemplo"&etc
+       //URL:puerto/personas/editar/4?nombre="ejemplo"&apellido="ejemplo"&etc
        @PutMapping("personas/editar/{id}")
        //@PreAuthorize("hasRole('ADMIN')")
      public Persona editPersona(@PathVariable Long id,
