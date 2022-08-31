@@ -28,3 +28,7 @@
 .btn{
   box-shadow: 1px 1px 3px black;
 }
+
+.container{
+  padding-top: 5%;
+}

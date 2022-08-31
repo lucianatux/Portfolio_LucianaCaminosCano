@@ -2,21 +2,59 @@
   <div>
     <img src="../../../assets/APLogo.png" alt="" id="logoAP" />
   </div>
+
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Menu
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#inicio">Inicio</a></li>
+        <li><a class="dropdown-item" href="#acercade">Acerca de mi</a></li>
+        <li>
+          <a class="dropdown-item" href="#experien">Experiencia Laboral</a>
+        </li>
+        <li><a class="dropdown-item" href="#educac">Educación</a></li>
+        <li><a class="dropdown-item" href="#habilid">Hard&Soft Skills</a></li>
+        <li><a class="dropdown-item" href="#proyect">Proyectos</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#contact">Contacto</a></li>
+      </ul>
+    </li>
+  </ul>
+
   <div class="elementos">
     <a href="{{ persona.linkedin }}"
-          ><img src="../../../assets/linkedin.png" alt="" id="linkedin"
-        /></a>
-        <a href="{{ persona.github }}"
-          ><img src="../../../assets/github1.png" alt="" id="github"
-        /></a>
-        <a href="{{ persona.instagram }}"
-          ><img src="../../../assets/instagram.png" alt="" id="instagram"
-        /></a>
-  
-    <button type="button" class="btn btn-outline-light" 
-    (click)="login()" *ngIf="!isLogged">Iniciar Sesión</button>
-    <button type="button" class="btn btn-outline-light" 
-    (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
-       
+      ><img src="../../../assets/linkedin.png" alt="" id="linkedin"
+    /></a>
+    <a href="{{ persona.github }}"
+      ><img src="../../../assets/github1.png" alt="" id="github"
+    /></a>
+    <a href="{{ persona.instagram }}"
+      ><img src="../../../assets/instagram.png" alt="" id="instagram"
+    /></a>
+
+    <button
+      type="button"
+      class="btn btn-outline-light"
+      (click)="login()"
+      *ngIf="!isLogged"
+    >
+      Iniciar Sesión
+    </button>
+    <button
+      type="button"
+      class="btn btn-outline-light"
+      (click)="onLogOut()"
+      *ngIf="isLogged"
+    >
+      Cerrar Sesión
+    </button>
   </div>
 </div>
